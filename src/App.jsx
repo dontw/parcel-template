@@ -1,14 +1,20 @@
 import { h } from 'preact'
+import { useEffect } from 'preact/hooks';
+
+import pkg from '../package.json'
+
+import Home from './view/Home.jsx'
 
 export default function App() {
-  return (
-    <div>
-      <h1>Hello World from Preact! 📦 🚀</h1>
-      <h2 className="text-red-500 text-6xl">style testing!</h2>
-      <h3 className="text-red-500 text-5xl"> tailwind style test</h3>
-      <div class="mt-4">
-        <button class="text-purple-500 hover:text-white hover:bg-purple-500 border border-purple-500 text-xs font-semibold rounded-full px-4 py-1 leading-normal">Message</button>
-      </div>
-    </div>
-  )
+  useEffect(() => {
+    console.log(
+      `%c parcel-starter for Carnival %c v ${pkg.version} %c`,
+      'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+      'background:#E2601A ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+      'background:transparent'
+    )
+
+  })
+
+  return <Home />
 }

@@ -16,6 +16,7 @@
     "tailwindcss": "^1.1.2"
   },
   "dependencies": {
-    "preact": "^8.5.2"
+    "@glidejs/glide": "^3.4.1",
+    "preact": "^10.0.0-rc.3"
   }
 }
