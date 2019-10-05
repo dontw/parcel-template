@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "predev": "rm -rf dist .cache",
-    "dev": "parcel serve src/index.html",
+    "dev": "parcel serve src/index.html --port 80",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html --no-source-maps"
   },
@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
-    "preact": "^10.0.0-rc.3"
+    "preact": "^10.0.0-rc.3",
+    "smoothscroll-polyfill": "^0.4.4",
+    "whatwg-fetch": "^3.0.0"
   }
 }

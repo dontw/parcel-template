@@ -1,38 +1,60 @@
-import { h } from 'preact'
+import { h, render } from 'preact'
 import { useState, useEffect } from 'preact/hooks';
 
 // components
-import Carousel from '../components/Carousel.jsx';
-import Card from '../components/Card.jsx';
+import Nav from '../components/Nav'
+import Carousel from '../components/Carousel';
+import SquareImage from '../components/SqureImage'
+import Promotion from '../components/Promotion'
+import Footer from '../components/Footer'
+import SideNav from '../components/SideNav'
+import contentConfig from '../content.config';
+// import Card from '../components/Card.jsx';
+
+
+const MyComponent = function ({tagName, data}) {
+  switch (tagName) {
+    case 'Carousel':
+      return h(Carousel,{data})
+    
+    case 'SquareImage':
+      return h(SquareImage, {data})
+    
+    case 'Promotion':
+      const doge = getProductData()
+      return h(Promotion, {data})
+  }
+}
+
+const getProductData = (barcodes) => {
+  console.log('doge')
+  fetch('https://stock.halfme.com/api/promo/products?barcodes=Q91020461701S')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data) // Prints result from `response.json()` in getRequest
+    })
+    .catch(error => console.error(error))
+}
 
 export default function Home() {
-  const [images, setImages] = useState([])
+  const [promoItems, setPromoItems] = useState([])
 
-  function fetchImages() {
-    return [{ name: 'shiba', url: 'https://cdn.shibe.online/shibes/286a57961373d05d8bc885a7470231d6b8cfb8d9.jpg' },
-    { name: 'shiba', url: 'https://cdn.shibe.online/shibes/c22b64222bd50ffb2e2c718bd9260b7ad9d51413.jpg' },
-    { name: 'shiba', url: 'https://cdn.shibe.online/shibes/8e0bdd8f8c9da7d60f0e73cab2f64f902c1f3f16.jpg' }]
+  function fetchPromoItems(){
+    return null
   }
 
   useEffect(() => {
-    const newImages = fetchImages();
-    setImages(newImages);
+    const newPromoItems = fetchPromoItems();
+    setPromoItems(newPromoItems)
   }, []);
 
   return (
     <div>
-      <div class="container mx-auto">
-        <h1 class="text-6xl text-center">Hello World from Preact! 📦 🚀 🤯</h1>
-      </div>
-      <div className="container mx-auto text-center">
-        the carousel component
-      </div>
-      <Carousel images={images} number={0}></Carousel>
-      <div className="container mx-auto text-center my-12">
-        <div className="flex">
-          {images.map(image => <div class="w-1/3"><Card data={image}/></div>)}
-        </div>
-      </div>
+      <Nav />
+      {
+        contentConfig.map(item => <MyComponent tagName={item.tagName} data={item.data}></MyComponent>)
+      }
+      <Footer/>
     </div>
   )
 }

@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.test {
-  color: green;
+html {
+	scroll-behavior: smooth;
 }
