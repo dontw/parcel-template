@@ -7,7 +7,7 @@ function numberFormatter(num) {
 export default function Card({ data }) {
   return (
     <div class="rounded-sm bg-white m-3">
-      <img class="object-cover" src={data.image} alt="Sunset in the mountains" loading="lazy" />
+      <img class="object-cover" src={data.image} alt="Sunset in the mountains"/>
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{data.designer}</div>
         <div class="mb-1 truncate" style="color:#999999;">{data.product_name}</div>
