@@ -53,7 +53,7 @@ export default {
       tagName: "Promotion",
       data: {
         promotionId: "promo1",
-        promotionHeader: "很推薦",
+        promotionHeader: "很推薦ㄛ",
         promotionBarcodes: [
           "Q91020461701S",
           "Q91020002210S",
@@ -61,10 +61,6 @@ export default {
           "Q91020804606M",
           "Q91020562803S",
           "Q91020002229S",
-          "Q91020702233L",
-          "Q91020702233L",
-          "Q91020702233L",
-          "Q91020702233L"
         ],
         headerBgColor: "#9A999A",
         contentBgColor: "#333333"
@@ -74,13 +70,12 @@ export default {
       tagName: "Promotion",
       data: {
         promotionId: "promo2",
-        promotionHeader: "超推薦",
+        promotionHeader: "超推薦ㄛ",
         promotionBarcodes: [
-          "Q91020461701S",
-          "Q91020002210S",
-          "Q91020102213M",
-          "Q91020804606M",
-          "Q91020562803S",
+          "Q91020702233L",
+          "Q91020702233L",
+          "Q91020702233L",
+          "Q91020702233L"
         ],
         headerBgColor: "#9A999A",
         contentBgColor: "#FFFFFF"
@@ -94,11 +89,11 @@ export default {
       data:{
         linkList:[
           {
-            name: '很推薦',
+            name: '很推薦ㄛ',
             targetId: '#promo1'
           },
           {
-            name: '超推薦',
+            name: '超推薦ㄛ',
             targetId: '#promo2'
           }
         ]

@@ -8,19 +8,19 @@ import SquareImage from "../components/SqureImage";
 import Promotion from "../components/Promotion";
 import Footer from "../components/Footer";
 import SideNav from "../components/SideNav";
-import contentConfig from "../content.config";
+import ContentConfig from "../content.config";
 // import Card from '../components/Card.jsx';
 
 const MyComponent = function({ tagName, data }) {
   switch (tagName) {
     case "Nav":
-      return <Nav />
+      return <Nav />;
 
     case "Footer":
-      return <Footer />
-    
+      return <Footer />;
+
     case "SideNav":
-      return <SideNav data={data}/>
+      return <SideNav data={data} />;
 
     case "Carousel":
       return <Carousel data={data} />;
@@ -49,15 +49,15 @@ export default function Home() {
   const [components, setComponents] = useState([]);
 
   useEffect(() => {
-    contentConfig.components.forEach(item => {
+    ContentConfig.components.forEach(item => {
       if (item.tagName === "Promotion" && item.data.promotionBarcodes) {
         getProductData(item.data.promotionBarcodes).then(res => {
           item.data.promotionItems = res;
-          setComponents([...contentConfig.components])
+          setComponents([...ContentConfig.components]);
         });
       }
     });
-    document.title = contentConfig.title;
+    document.title = ContentConfig.title;
   }, []);
 
   return (

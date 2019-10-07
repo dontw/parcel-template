@@ -20,8 +20,9 @@
   "dependencies": {
     "@babel/runtime": "^7.6.2",
     "@glidejs/glide": "^3.4.1",
-    "preact": "^10.0.0-rc.3",
+    "preact": "^10.0.0",
     "smoothscroll-polyfill": "^0.4.4",
+    "vanilla-lazyload": "^12.1.0",
     "whatwg-fetch": "^3.0.0"
   }
 }
