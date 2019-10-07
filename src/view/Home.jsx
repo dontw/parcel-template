@@ -36,7 +36,7 @@ const MyComponent = function({ tagName, data }) {
 const getProductData = barcodes => {
   if (barcodes) {
     return fetch(
-      `https://stock.halfme.com/api/promo/products?barcodes=${barcodes.join(
+      `${process.env.API_URL}/products?barcodes=${barcodes.join(
         ","
       )}`
     )

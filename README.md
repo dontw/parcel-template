@@ -6,12 +6,6 @@
 
 node.js v.10.16.3 以上 (LTS 版本)
 
-另外環境中要預先安裝 `parcel`
-
-```bash
-yarn global add parcel-bundler
-```
-
 ## Getting Started
 
 ```bash
@@ -19,7 +13,7 @@ yarn global add parcel-bundler
 git clone git@gitlab.halfme.com:frontend-boilerplates/parcel-tamplate.git
 
 # enter the project directory
-cd parcel-tamplate
+cd event-site
 
 # install dependency
 yarn
@@ -28,13 +22,14 @@ yarn
 yarn dev
 ```
 
-This will automatically open http://localhost:1234
+This will automatically open http://localhost
 
 ## Build
 
 ```bash
 
 # build for production environment
+# 結果會產出魚 /dist 資料夾中
 yarn build
 ```
 
