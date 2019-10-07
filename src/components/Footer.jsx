@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import LogoImage from '../assets/halfme-logo-black.jpg'
+import LogoImage from '../assets/halfme-logo-black.svg'
 export default function Footer(params) {
   return (
     <footer class="bg-white px-6 py-3 md:py-4 text-center md:text-left">

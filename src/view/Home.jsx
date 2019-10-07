@@ -1,60 +1,70 @@
-import { h, render } from 'preact'
-import { useState, useEffect } from 'preact/hooks';
+import { h, render } from "preact";
+import { useState, useEffect } from "preact/hooks";
 
 // components
-import Nav from '../components/Nav'
-import Carousel from '../components/Carousel';
-import SquareImage from '../components/SqureImage'
-import Promotion from '../components/Promotion'
-import Footer from '../components/Footer'
-import SideNav from '../components/SideNav'
-import contentConfig from '../content.config';
+import Nav from "../components/Nav";
+import Carousel from "../components/Carousel";
+import SquareImage from "../components/SqureImage";
+import Promotion from "../components/Promotion";
+import Footer from "../components/Footer";
+import SideNav from "../components/SideNav";
+import contentConfig from "../content.config";
 // import Card from '../components/Card.jsx';
 
-
-const MyComponent = function ({tagName, data}) {
+const MyComponent = function({ tagName, data }) {
   switch (tagName) {
-    case 'Carousel':
-      return h(Carousel,{data})
-    
-    case 'SquareImage':
-      return h(SquareImage, {data})
-    
-    case 'Promotion':
-      const doge = getProductData()
-      return h(Promotion, {data})
-  }
-}
+    case "Nav":
+      return <Nav />
 
-const getProductData = (barcodes) => {
-  console.log('doge')
-  fetch('https://stock.halfme.com/api/promo/products?barcodes=Q91020461701S')
-    .then(response => response.json())
-    .then(data => {
-      console.log(data) // Prints result from `response.json()` in getRequest
-    })
-    .catch(error => console.error(error))
-}
+    case "Footer":
+      return <Footer />
+    
+    case "SideNav":
+      return <SideNav data={data}/>
+
+    case "Carousel":
+      return <Carousel data={data} />;
+
+    case "SquareImage":
+      return <SquareImage data={data} />;
+
+    case "Promotion":
+      return <Promotion data={data} />;
+  }
+};
+
+const getProductData = barcodes => {
+  if (barcodes) {
+    return fetch(
+      `https://stock.halfme.com/api/promo/products?barcodes=${barcodes.join(
+        ","
+      )}`
+    )
+      .then(response => response.json())
+      .catch(error => console.error(error));
+  }
+};
 
 export default function Home() {
-  const [promoItems, setPromoItems] = useState([])
-
-  function fetchPromoItems(){
-    return null
-  }
+  const [components, setComponents] = useState([]);
 
   useEffect(() => {
-    const newPromoItems = fetchPromoItems();
-    setPromoItems(newPromoItems)
+    contentConfig.components.forEach(item => {
+      if (item.tagName === "Promotion" && item.data.promotionBarcodes) {
+        getProductData(item.data.promotionBarcodes).then(res => {
+          item.data.promotionItems = res;
+          setComponents([...contentConfig.components])
+        });
+      }
+    });
+    document.title = contentConfig.title;
   }, []);
 
   return (
     <div>
-      <Nav />
-      {
-        contentConfig.map(item => <MyComponent tagName={item.tagName} data={item.data}></MyComponent>)
-      }
-      <Footer/>
+      {components.map(item => (
+        <MyComponent tagName={item.tagName} data={item.data}></MyComponent>
+      ))}
     </div>
-  )
+  );
 }
