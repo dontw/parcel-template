@@ -29,7 +29,7 @@ This will automatically open http://localhost
 ```bash
 
 # build for production environment
-# 結果會產出魚於/dist 資料夾中
+# 結果會產出於 /dist 資料夾中
 yarn build
 ```
 
