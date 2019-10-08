@@ -19,5 +19,6 @@ prodDeploy:
   extends: .nodejs-docker-deploy
   only:
     - master
+    - uat
   variables:
     SELF_PROJECT: "alpha-event"
