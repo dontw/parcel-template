@@ -5,6 +5,8 @@ import Glide from "@glidejs/glide";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import "@glidejs/glide/dist/css/glide.theme.min.css";
 
+import LazyImage from './LazyImage'
+
 export default function Carousel({ data }) {
   //get element
   let glideElm = useRef(null);

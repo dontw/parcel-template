@@ -44,7 +44,17 @@ export default {
         mobileImageUrl:
           "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster",
         imageUrl:
-          "https://d1icd6shlvmxi6.cloudfront.net/gsc/9HAKSQ/fa/bf/39/fabf392329944c818228eddb2bfb4eea/images/web/u67.jpg?token=14e306f5b170980b94be4a334a56af29f2fe4febd38efce88f258a0b2d3dd906"
+          "https://d1icd6shlvmxi6.cloudfront.net/gsc/9HAKSQ/fa/bf/39/fabf392329944c818228eddb2bfb4eea/images/web/u67.jpg?token=17a4a17d6c34a15f3ac57299212eaa7c3dad6142a4acf8bac4bb74be7695fffa"
+      }
+    },
+
+    {
+      tagName: "SquareImage",
+      data: {
+        mobileImageUrl:
+          "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster",
+        imageUrl:
+          "https://d1icd6shlvmxi6.cloudfront.net/gsc/9HAKSQ/fa/bf/39/fabf392329944c818228eddb2bfb4eea/images/web/u67.jpg?token=17a4a17d6c34a15f3ac57299212eaa7c3dad6142a4acf8bac4bb74be7695fffa"
       }
     },
 
@@ -72,10 +82,9 @@ export default {
         promotionId: "promo2",
         promotionHeader: "超推薦ㄛ",
         promotionBarcodes: [
+          "Q91020002229S",
           "Q91020702233L",
-          "Q91020702233L",
-          "Q91020702233L",
-          "Q91020702233L"
+          "Q91020102241L",
         ],
         headerBgColor: "#9A999A",
         contentBgColor: "#FFFFFF"
