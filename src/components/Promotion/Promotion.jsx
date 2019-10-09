@@ -12,7 +12,7 @@ export default function Promotion({ data }) {
         {data.promotionHeader}
       </h1>
       <div style={{ backgroundColor: data.contentBgColor }}>
-        <div class='container m-auto flex flex-wrap py-5 px-2 xl:px-40'>
+        <div class='container m-auto flex flex-wrap py-5 px-2 xl:px-32'>
           {data.promotionItems
             ? data.promotionItems.map(item => (
                 <div class='w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 xxl:w-1/4'>
