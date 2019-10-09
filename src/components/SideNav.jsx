@@ -39,7 +39,7 @@ export default function SideNav({ data }) {
     <ul
       id='side-nav'
       class='hidden xl:block xl:fixed'
-      style='left:-50%; top:30%; z-index:1000; transition:.3s;'
+      style='left:-50%; top:132px;  z-index:1000; transition:.3s;'
     >
       {data.linkList.map(item => (
         <li class='ml-4 mb-3'>

@@ -16,21 +16,21 @@ export default {
           {
             name: "shiba",
             url:
-              "https://fakeimg.pl/1600x800/?text=Desktop%20Image&font=lobster",
+              "https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster",
             mobileUrl:
               "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster"
           },
           {
             name: "shiba",
             url:
-              "https://fakeimg.pl/1600x800/?text=Desktop%20Image&font=lobster",
+              "https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster",
             mobileUrl:
               "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster"
           },
           {
             name: "shiba",
             url:
-              "https://fakeimg.pl/1600x800/?text=Desktop%20Image&font=lobster",
+              "https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster",
             mobileUrl:
               "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster"
           }
@@ -85,6 +85,8 @@ export default {
           "Q91020002229S",
           "Q91020702233L",
           "Q91020102241L",
+          "Q91020102241L",
+          "Q91020102241L"
         ],
         headerBgColor: "#9A999A",
         contentBgColor: "#FFFFFF"
