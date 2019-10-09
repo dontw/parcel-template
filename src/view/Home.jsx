@@ -4,7 +4,7 @@ import { useState, useEffect } from "preact/hooks";
 // components
 import Nav from "../components/Nav";
 import Carousel from "../components/Carousel";
-import SquareImage from "../components/SqureImage";
+import SquareImage from "../components/SquareImage";
 import Promotion from "../components/Promotion";
 import Footer from "../components/Footer";
 import SideNav from "../components/SideNav";

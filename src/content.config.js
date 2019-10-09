@@ -42,9 +42,9 @@ export default {
       tagName: "SquareImage",
       data: {
         mobileImageUrl:
-          "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster",
+          "https://fakeimg.pl/400x500/?text=Mobile&font=lobster",
         imageUrl:
-          "https://d1icd6shlvmxi6.cloudfront.net/gsc/9HAKSQ/fa/bf/39/fabf392329944c818228eddb2bfb4eea/images/web/u67.jpg?token=17a4a17d6c34a15f3ac57299212eaa7c3dad6142a4acf8bac4bb74be7695fffa"
+          "https://fakeimg.pl/1024x1024/?text=1024&font=lobster"
       }
     },
 
@@ -52,9 +52,9 @@ export default {
       tagName: "SquareImage",
       data: {
         mobileImageUrl:
-          "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster",
+          "https://fakeimg.pl/400x500/?text=Mobile&font=lobster",
         imageUrl:
-          "https://d1icd6shlvmxi6.cloudfront.net/gsc/9HAKSQ/fa/bf/39/fabf392329944c818228eddb2bfb4eea/images/web/u67.jpg?token=17a4a17d6c34a15f3ac57299212eaa7c3dad6142a4acf8bac4bb74be7695fffa"
+          "https://fakeimg.pl/1024x1024/?text=1024&font=lobster"
       }
     },
 

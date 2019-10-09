@@ -10,8 +10,10 @@ module.exports = {
       'lg': '768px',
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1024px',
+      'xl': '1023px',
       // => @media (min-width: 1280px) { ... }
+
+      'xxl': '1300px'
     }
   }
 }

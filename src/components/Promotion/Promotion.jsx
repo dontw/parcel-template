@@ -1,6 +1,6 @@
-import { h } from "preact";
+import { h } from 'preact'
 
-import PromotionCard from "./PromotionCard.jsx";
+import PromotionCard from './PromotionCard.jsx'
 
 export default function Promotion({ data }) {
   return (
@@ -12,10 +12,10 @@ export default function Promotion({ data }) {
         {data.promotionHeader}
       </h1>
       <div style={{ backgroundColor: data.contentBgColor }}>
-        <div class='container m-auto flex flex-wrap py-5 px-2'>
+        <div class='container m-auto flex flex-wrap py-5 px-2 xl:px-40'>
           {data.promotionItems
             ? data.promotionItems.map(item => (
-                <div class='w-full sm:w-1/2 md:w-1/3 lg:w-1/4'>
+                <div class='w-full sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 xxl:w-1/4'>
                   <PromotionCard data={item} />
                 </div>
               ))
@@ -23,5 +23,5 @@ export default function Promotion({ data }) {
         </div>
       </div>
     </div>
-  );
+  )
 }

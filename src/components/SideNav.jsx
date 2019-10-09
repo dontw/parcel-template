@@ -16,7 +16,7 @@ function clickAnchorItem(event, id) {
 
 export default function SideNav({ data }) {
   return (
-    <ul class='hidden lg:block lg:fixed' style='top:30%; z-index:1000;'>
+    <ul class='hidden xl:block xl:fixed' style='top:30%; z-index:1000;'>
       {data.linkList.map(item => (
         <li class='ml-4 mb-3'>
           <a
@@ -28,7 +28,7 @@ export default function SideNav({ data }) {
             <span class="inline-block p-1 bg-white border-2 border-gray-400 rounded-full align-middle mr-2" style="margin-bottom:5px;">
               <img src={accIcon} style="height:18px; width:18px;" alt="bell icon"/>
             </span>
-            <span class="inline-block text-lg  text-white">{item.name} 我有功能</span>
+            <span class="inline-block text-lg  text-white">{item.name}</span>
           </a>
         </li>
       ))}
