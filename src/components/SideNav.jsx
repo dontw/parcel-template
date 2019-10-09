@@ -1,6 +1,6 @@
 import { h } from 'preact'
 
-import { useState, useEffect } from 'preact/hooks'
+import { useEffect } from 'preact/hooks'
 
 // icons
 import accIcon from '../assets/accessories.svg'
@@ -24,9 +24,9 @@ function handleScroll(params) {
     .scrollHeight
 
   if (window.pageYOffset > firstCarouselElmScrollHeight) {
-    NavElm.style.left = "0"
-  }else{
-    NavElm.style.left="-50%"
+    NavElm.style.left = '0'
+  } else {
+    NavElm.style.left = '-50%'
   }
 }
 
@@ -38,7 +38,7 @@ export default function SideNav({ data }) {
   return (
     <ul
       id='side-nav'
-      class="hidden xl:block xl:fixed"
+      class='hidden xl:block xl:fixed'
       style='left:-50%; top:30%; z-index:1000; transition:.3s;'
     >
       {data.linkList.map(item => (

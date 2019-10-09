@@ -1,6 +1,6 @@
 import { h } from 'preact'
 import LogoImage from '../assets/halfme-logo-black.svg'
-
+import ShareIcon from '../assets/icon_share.svg'
 function handleClick() {
   let copyInput = document.querySelector('#copy-input')
   copyInput.select()
@@ -16,10 +16,11 @@ export default function Footer(params) {
       <p class='inline-block'>Copyright ©2019 Halfme</p>
       <input id="copy-input" style="position:absolute; right:9999999px;" type="text" value={window.location.href}/>
       <button
-        class='float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+        style="transition:.3s;"
+        class='float-right bg-gray-700 hover:bg-gray-500 text-white p-3 font-bold rounded-full'
         onClick={handleClick}
       >
-        分享
+        <img style="height:24px; width:24px;" src={ShareIcon} alt="share icon"/>
       </button>
     </footer>
   )
