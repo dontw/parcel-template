@@ -9,7 +9,7 @@ function handleClick() {
 }
 export default function Footer(params) {
   return (
-    <footer class='bg-white px-6 py-3 md:py-4 text-center md:text-left'>
+    <footer class='bg-white hidden lg:block px-6 py-3 md:py-4 text-center md:text-left'>
       <a href='https://www.halfme.com/' class='inline-block mr-2'>
         <img src={LogoImage} class='h-8 md:h-10' alt="halfme's logo" />
       </a>
@@ -31,11 +31,11 @@ export default function Footer(params) {
           alt='share icon'
         />
       </button>
-      <img
+      {/* <img
         class="float-right"
         src='https://cloud.shopback.com/raw/upload/static/images/footer/happydance-loader.gif'
         alt='wow'
-      />
+      /> */}
     </footer>
   )
 }
