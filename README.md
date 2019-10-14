@@ -1,6 +1,6 @@
-# parcel-template
+# alpha-event
 
-輕量化的前端開發工具組，主要使用 tailwindcss + preact
+第一個活動頁，基於 [parcel-template](https://gitlab.halfme.com/frontend-boilerplates/parcel-template)
 
 # Requirement
 
@@ -10,10 +10,10 @@ node.js v.10.16.3 以上 (LTS 版本)
 
 ```bash
 # clone the project
-git clone git@gitlab.halfme.com:frontend-boilerplates/parcel-tamplate.git
+git clone git@gitlab.halfme.com:halfme-events/alpha-event.git
 
 # enter the project directory
-cd event-site
+cd alpha-event
 
 # install dependency
 yarn
