@@ -12,13 +12,19 @@ import CoatIcon from '~/assets/icon_coat.svg'
 import PantsIcon from '~/assets/icon_pants.svg'
 // 上身
 import ShirtIcon from '~/assets/icon_shirt.svg'
+// 眼鏡
+import GlassesIcon from '~/assets/icon_glasses.svg'
+// 襪子
+import SocksIcon from '~/assets/icon_socks.svg'
 
 const Icon = {
   accessories: AccIcon,
   dress: DressIcon,
   coat: CoatIcon,
   pants: PantsIcon,
-  shirt: ShirtIcon
+  shirt: ShirtIcon,
+  glasses: GlassesIcon,
+  socks: SocksIcon
 }
 
 export default function SideNavItes({itemData}) {

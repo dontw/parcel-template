@@ -131,6 +131,38 @@ export default {
     },
 
     {
+      tagName: 'Promotion',
+      data: {
+        promotionId: 'promo5',
+        promotionHeader: '眼鏡',
+        promotionBarcodes: [
+          'W9102080641200',
+          'W9102080641300',
+          'W9102045641100',
+          'W9102045641000'
+        ],
+        headerBgColor: '#9A999A',
+        contentBgColor: '#FFFFFF'
+      }
+    },
+
+    {
+      tagName: 'Promotion',
+      data: {
+        promotionId: 'promo6',
+        promotionHeader: '襪子',
+        promotionBarcodes: [
+          'W9102095580100',
+          'W9102057580700',
+          'W9102055580800',
+          'W9102080580900'
+        ],
+        headerBgColor: '#9A999A',
+        contentBgColor: '#FFFFFF'
+      }
+    },
+
+    {
       tagName: 'Footer'
     },
     {
@@ -154,8 +186,18 @@ export default {
           },
           {
             name: '配件',
-            icon:'accessories',
+            icon: 'accessories',
             targetId: '#promo4'
+          },
+          {
+            name: '眼鏡',
+            icon: 'glasses',
+            targetId: '#promo5'
+          },
+          {
+            name: '襪子',
+            icon: 'socks',
+            targetId: '#promo6'
           }
         ]
       }
