@@ -1,114 +1,164 @@
 export default {
   //網頁 tab 標題
-  title: "The Event Website!!!",
+  title: 'The Event Website!!!',
 
   components: [
     //導航列
     {
-      tagName: "Nav"
+      tagName: 'Nav'
     },
     //輪播
     {
-      tagName: "Carousel",
+      tagName: 'Carousel',
       data: {
         id: 1,
         images: [
           {
-            name: "shiba",
+            name: 'shiba',
             url:
-              "https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster",
+              'https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster',
             mobileUrl:
-              "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster"
+              'https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster'
           },
           {
-            name: "shiba",
+            name: 'shiba',
             url:
-              "https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster",
+              'https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster',
             mobileUrl:
-              "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster"
+              'https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster'
           },
           {
-            name: "shiba",
+            name: 'shiba',
             url:
-              "https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster",
+              'https://fakeimg.pl/1600x900/?text=Desktop%20Image&font=lobster',
             mobileUrl:
-              "https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster"
+              'https://fakeimg.pl/1024x768/?text=Mobile%20Image&font=lobster'
           }
         ]
       }
     },
     // 大圖
     {
-      tagName: "SquareImage",
+      tagName: 'SquareImage',
       data: {
-        mobileImageUrl:
-          "https://fakeimg.pl/400x500/?text=Mobile&font=lobster",
-        imageUrl:
-          "https://fakeimg.pl/1024x1024/?text=1024&font=lobster"
+        mobileImageUrl: 'https://fakeimg.pl/400x500/?text=Mobile&font=lobster',
+        imageUrl: 'https://fakeimg.pl/1024x1024/?text=1024&font=lobster'
       }
     },
 
     {
-      tagName: "SquareImage",
+      tagName: 'SquareImage',
       data: {
-        mobileImageUrl:
-          "https://fakeimg.pl/400x500/?text=Mobile&font=lobster",
-        imageUrl:
-          "https://fakeimg.pl/1024x1024/?text=1024&font=lobster"
+        mobileImageUrl: 'https://fakeimg.pl/400x500/?text=Mobile&font=lobster',
+        imageUrl: 'https://fakeimg.pl/1024x1024/?text=1024&font=lobster'
       }
     },
 
     // 促銷卡牌
     {
-      tagName: "Promotion",
+      tagName: 'Promotion',
       data: {
-        promotionId: "promo1",
-        promotionHeader: "很推薦ㄛ",
+        promotionId: 'promo1',
+        promotionHeader: '上身',
         promotionBarcodes: [
-          "Q91020461701S",
-          "Q91020002210S",
-          "Q91020102213M",
-          "Q91020804606M",
-          "Q91020562803S",
-          "Q91020002229S",
+          'Q92020002021',
+          'Q92020802021',
+          'Q92020001617',
+          'Q92020801617',
+          'Q92010001613',
+          'Q92010801613',
+          'Q92010002229',
+          'Q92010802229'
         ],
-        headerBgColor: "#9A999A",
-        contentBgColor: "#333333"
+        headerBgColor: '#9A999A',
+        contentBgColor: '#333333'
       }
     },
     {
-      tagName: "Promotion",
+      tagName: 'Promotion',
       data: {
-        promotionId: "promo2",
-        promotionHeader: "超推薦ㄛ",
+        promotionId: 'promo2',
+        promotionHeader: '下著',
         promotionBarcodes: [
-          "Q91020002229S",
-          "Q91020702233L",
-          "Q91020102241L",
-          "Q91020102241L",
-          "Q91020102241L"
+          'Q92020003638',
+          'Q92020803638',
+          'Q92010574622',
+          'Q92010644622',
+          'Q92020133635',
+          'Q92020573635',
+          'Q92010004625',
+          'Q92010804625'
         ],
-        headerBgColor: "#9A999A",
-        contentBgColor: "#FFFFFF"
+        headerBgColor: '#9A999A',
+        contentBgColor: '#FFFFFF'
       }
     },
+
     {
-      tagName: "Footer"
+      tagName: 'Promotion',
+      data: {
+        promotionId: 'promo3',
+        promotionHeader: '外套',
+        promotionBarcodes: [
+          'Q92010912228',
+          'Q92010802228',
+          'Q92020591411',
+          'Q92020761411'
+        ],
+        headerBgColor: '#9A999A',
+        contentBgColor: '#FFFFFF'
+      }
+    },
+
+    {
+      tagName: 'Promotion',
+      data: {
+        promotionId: 'promo4',
+        promotionHeader: '配件',
+        promotionBarcodes: [
+          'W9102080641200',
+          'W9102080641300',
+          'W9102045641100',
+          'W9102045641000',
+          'W9102095580100',
+          'W9102057580700',
+          'W9102055580800',
+          'W9102080580900'
+        ],
+        headerBgColor: '#9A999A',
+        contentBgColor: '#FFFFFF'
+      }
+    },
+
+    {
+      tagName: 'Footer'
     },
     {
-      tagName: "SideNav",
-      data:{
-        linkList:[
+      tagName: 'SideNav',
+      data: {
+        linkList: [
           {
-            name: '很推薦ㄛ',
+            name: '上身',
+            icon: 'shirt',
             targetId: '#promo1'
           },
           {
-            name: '超推薦ㄛ',
+            name: '下著',
+            icon: 'pants',
             targetId: '#promo2'
+          },
+          {
+            name: '外套',
+            icon: 'coat',
+            targetId: '#promo3'
+          },
+          {
+            name: '配件',
+            icon:'accessories',
+            targetId: '#promo4'
           }
         ]
       }
     }
   ]
-};
+}
