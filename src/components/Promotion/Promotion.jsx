@@ -30,7 +30,7 @@ export default function Promotion({ data }) {
               </div>
             ))
           ) : (
-            //TODO: not found
+            //TODO: color change function
             <div class="w-full text-center">
               <img class="inline-block" style={{width:'300px',height:'300px'}} src={CommingSoonImage} alt="comming soon image"/>
             </div>
