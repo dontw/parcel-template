@@ -2,6 +2,16 @@ import { h } from 'preact'
 
 import PromotionCard from './PromotionCard.jsx'
 
+import CommingSoonImage from '~/assets/comingsoon.svg'
+
+function getSvgcolor(bgColorCode){
+  if(bgColorCode === '#333333'){
+    return 'invert(100%);'
+  }else{
+    return 'invert(0%);'
+  }
+}
+
 export default function Promotion({ data }) {
   return (
     <div id={data.promotionId}>
@@ -21,7 +31,9 @@ export default function Promotion({ data }) {
             ))
           ) : (
             //TODO: not found
-            <img src="https://fakeimg.pl/450x350/ffffff/000000/?text=Not%20Found...&font=lobster%22" alt="not found image"/>
+            <div class="w-full text-center">
+              <img class="inline-block" style={{width:'300px',height:'300px'}} src={CommingSoonImage} alt="comming soon image"/>
+            </div>
           )}
         </div>
       </div>
