@@ -63,7 +63,7 @@ export default function Home() {
       const Spell = prompt('請輸入咒語')
       switch (Spell) {
         case 'shibe':
-          alert('wow! you are so awsome!')
+          alert('wow! you are so awesome!')
           setContent();
           break
         default:
