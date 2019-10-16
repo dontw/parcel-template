@@ -1,7 +1,8 @@
-export default {
-  //網頁 tab 標題
-  title: 'The Event Website!!!',
-
+module.exports ={
+  title: '某某活動的 title@@!!!',
+  description: '某某活動的 description 在這',
+  url: process.env.URL,
+  imageUrl: 'https://fakeimg.pl/600x314/282828/eae0d0/?retina=1',
   components: [
     //導航列
     {
