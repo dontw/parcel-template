@@ -8,7 +8,7 @@ import SquareImage from "../components/SquareImage";
 import Promotion from "../components/Promotion";
 import Footer from "../components/Footer";
 import SideNav from "../components/SideNav";
-import ContentConfig from "../content.config";
+import ContentConfig from "~/../content.config";
 // import Card from '../components/Card.jsx';
 
 const MyComponent = function({ tagName, data }) {

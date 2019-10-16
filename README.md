@@ -33,12 +33,30 @@ This will automatically open http://localhost
 yarn build
 ```
 
+## Project Structure
+```shell
+├─src
+│  ├─/assets     # icon 與 圖片
+│  ├─/components # 組件
+│  ├─/style      # 樣式：純粹用來引入 tailwind.css 沒必要不要擴充
+│  ├─/view       # 頁面容器組件
+│  ├─index.html  # html 主檔：使用 posthtml expression 模板，於此引入 main.js
+│  └─main.js     # js 主檔：在此引入 樣式 及 js 功能套件
+├─.env               # 環境變數
+├─content.config.js  # 活動頁內容設定檔
+├─postcss.config.js  # postcss設定: tailwind, autoprefixer, purgecss
+└─tailwind.config.js # tailwind css 自訂主題設定： container 寬度
+
+```
+
+
 ## Environment Variables
 環境變數被設定於 `.env` 中
 
-| 變數名稱 | 說明         |
-| -------- | ------------ |
-| APP_URL  | Api base url |
+| 變數名稱 | 說明                                  |
+| -------- | ------------------------------------- |
+| URL      | 本專案要部署的 url ， 給 meta tags 用 |
+| APP_URL  | Api base url                          |
 
 ## Contact
 
