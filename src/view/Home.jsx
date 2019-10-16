@@ -57,7 +57,6 @@ export default function Home() {
         });
       }
     });
-    document.title = ContentConfig.title;
   }, []);
 
   return (

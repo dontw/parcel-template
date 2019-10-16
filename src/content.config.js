@@ -1,7 +1,4 @@
 export default {
-  //網頁 tab 標題
-  title: 'The Event Website!!!',
-
   components: [
     //導航列
     {
