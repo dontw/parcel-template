@@ -71,8 +71,9 @@ module.exports ={
           'Q92010002229',
           'Q92010802229'
         ],
+        // hexcode
         headerBgColor: '#9A999A',
-        contentBgColor: '#333333'
+        contentBgColor: '#CC6666'
       }
     },
     {
@@ -107,7 +108,7 @@ module.exports ={
           'Q92020761411'
         ],
         headerBgColor: '#9A999A',
-        contentBgColor: '#FFFFFF'
+        contentBgColor: '#662233'
       }
     },
 
@@ -127,7 +128,7 @@ module.exports ={
           'W9102080580900'
         ],
         headerBgColor: '#9A999A',
-        contentBgColor: '#FFFFFF'
+        contentBgColor: '#333333'
       }
     },
 
