@@ -1,16 +1,28 @@
 import { h } from 'preact'
 
+import getColorContrast from '~/utils/getColorContrast'
+
 import PromotionCard from './PromotionCard.jsx'
 
 import CommingSoonImage from '~/assets/comingsoon.svg'
 
-function getSvgcolor(bgColorCode){
-  if(bgColorCode === '#333333'){
-    return 'invert(100%);'
-  }else{
-    return 'invert(0%);'
-  }
-}
+const blackCommingSoonImage = (
+  <img
+    class='inline-block'
+    style={{ width: '300px', height: '300px', filter: 'invert(100%)' }}
+    src={ CommingSoonImage }
+    alt='comming soon image'
+  />
+)
+
+const whiteCommingSoonImage = (
+  <img
+    class='inline-block'
+    style={{ width: '300px', height: '300px' }}
+    src={ CommingSoonImage }
+    alt='comming soon image'
+  />
+)
 
 export default function Promotion({ data }) {
   return (
@@ -31,8 +43,10 @@ export default function Promotion({ data }) {
             ))
           ) : (
             //TODO: color change function
-            <div class="w-full text-center">
-              <img class="inline-block" style={{width:'300px',height:'300px'}} src={CommingSoonImage} alt="comming soon image"/>
+            <div class='w-full text-center'>
+              {
+                getColorContrast(data.contentBgColor) === 'black' ? whiteCommingSoonImage : blackCommingSoonImage
+              }
             </div>
           )}
         </div>
