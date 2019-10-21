@@ -20,6 +20,11 @@ yarn
 
 # develop
 yarn dev
+
+# Compress png image
+# 使用第三方 api https://tinypng.com 壓縮圖檔，每月限額 500 次
+# api key 為 Zh5R5cXFqZVl7qFkJZSFMLsYXVs9mYHT
+yarn tinypng
 ```
 
 This will automatically open http://localhost
