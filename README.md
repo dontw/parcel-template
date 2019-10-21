@@ -25,6 +25,10 @@ yarn dev
 # 使用第三方 api https://tinypng.com 壓縮圖檔，每月限額 500 次
 # api key 為 Zh5R5cXFqZVl7qFkJZSFMLsYXVs9mYHT
 yarn tinypng
+
+# Minify svg image
+# 使用 svgo 壓縮圖檔
+yarn svgo
 ```
 
 This will automatically open http://localhost
@@ -54,6 +58,7 @@ yarn build
 ├─.env               # 環境變數
 ├─content.config.js  # 活動頁內容設定檔
 ├─postcss.config.js  # postcss設定: tailwind, autoprefixer, purgecss
+├─posthtml.config.js # posthtml設定: html 變數模板 posthtml-expressions
 └─tailwind.config.js # tailwind css 自訂主題設定： container 寬度
 
 ```
