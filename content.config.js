@@ -17,23 +17,23 @@ module.exports ={
           {
             name: 'image1',
             url:
-              'https://i.imgur.com/ZbzvX3N.png',
+              'image01.png',
             mobileUrl:
-              'https://i.imgur.com/ZbzvX3N.png'
+              'image01.png'
           },
           {
             name: 'image2',
             url:
-              'https://i.imgur.com/8O2AVgu.png',
+              'image02.png',
             mobileUrl:
-              'https://i.imgur.com/8O2AVgu.png'
+              'image02.png'
           },
           {
             name: 'image3',
             url:
-              'https://i.imgur.com/BzoLUKo.png',
+              'image03.png',
             mobileUrl:
-              'https://i.imgur.com/BzoLUKo.png'
+              'image03.png'
           }
         ]
       }
