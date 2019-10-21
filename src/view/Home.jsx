@@ -59,6 +59,7 @@ export default function Home() {
   }
 
   useEffect(() => {
+    console.log('env', CurrentEnv)
     if (CurrentEnv !== 'production') {
       const Spell = prompt('請輸入咒語')
       switch (Spell) {

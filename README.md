@@ -27,6 +27,9 @@ This will automatically open http://localhost
 ## Build
 
 ```bash
+# build for uat enviroment
+# 結果會產出於 /dist 資料夾中
+yarn build:uat
 
 # build for production environment
 # 結果會產出於 /dist 資料夾中
@@ -34,6 +37,7 @@ yarn build
 ```
 
 ## Project Structure
+
 ```shell
 ├─src
 │  ├─/assets     # icon 與 圖片
@@ -49,12 +53,13 @@ yarn build
 
 ```
 
-
 ## Environment Variables
+
 環境變數被設定於 `.env` 中
 
 | 變數名稱 | 說明                                  |
 | -------- | ------------------------------------- |
+| CURR_ENV | 專案辨識目前環境用                    |
 | URL      | 本專案要部署的 url ， 給 meta tags 用 |
 | APP_URL  | Api base url                          |
 
