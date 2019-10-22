@@ -21,7 +21,7 @@ module.exports = {
           {
             name: 'image1',
             url: 'header_web_banner.png',
-            mobileUrl: 'header_web_banner.png'
+            mobileUrl: 'header_app_banner.png'
           }
         ]
       }
