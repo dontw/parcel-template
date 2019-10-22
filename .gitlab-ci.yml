@@ -20,7 +20,7 @@ prodDeploy:
   only:
     - master
   variables:
-    SELF_PROJECT: "alpha-event"
+    SELF_PROJECT: "alpha-event-prod"
 
 uatDeploy:
   stage: deploy

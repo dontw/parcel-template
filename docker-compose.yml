@@ -11,6 +11,18 @@ services:
     # ports:
     #   - "80:80"
     restart: always
+services:
+  alpha-event-prod:
+    container_name: alpha-event-prod
+    # image: gitlab.halfme.com:4567/base-image/php:7.1.3-fpm-ubuntu16.04
+    build: 
+      context: .
+      dockerfile: CicdDockerfile
+    # volumes:
+    #   - .:/var/www
+    # ports:
+    #   - "80:80"
+    restart: always
 networks:
   default:
     external:
