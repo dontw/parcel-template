@@ -1,5 +1,7 @@
 FROM gitlab.halfme.com:4567/base-image/nodejs:12.8.1-alpine3.10
 
+ARG MODE
+
 EXPOSE 80 8080
 
 WORKDIR /usr/share/nginx/html/project
@@ -12,7 +14,7 @@ RUN yarn install \
 
 COPY . .
 
-RUN yarn build
+RUN yarn build${MODE}
 
 COPY ./docker/nginx.conf /etc/nginx/nginx.conf
 COPY ./docker/supervisord.conf /etc/supervisor.d/supervisord.ini
