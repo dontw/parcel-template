@@ -55,7 +55,7 @@ prodDeploy:
   #- git config --global user.email "user@example.com"
   #- git config --global user.name "User name"
   script:
-    - ssh -oStrictHostKeyChecking=no cicd@23.99.103.136 "cd $SELF_PROJECT && git pull && docker-compose build --no-cache $SELF_PROJECT && docker-compose up -d $SELF_PROJECT --force-recreate "
+    - ssh -oStrictHostKeyChecking=no cicd@23.99.103.136 "cd $SELF_PROJECT && git pull && docker-compose build --no-cache $SELF_PROJECT && docker-compose up -d --force-recreate $SELF_PROJECT "
 
 
 uatDeploy:
@@ -98,5 +98,5 @@ uatDeploy:
   #- git config --global user.email "user@example.com"
   #- git config --global user.name "User name"
   script:
-    - ssh -oStrictHostKeyChecking=no cicd@23.99.103.136 "cd $SELF_PROJECT && git pull && docker-compose build --build-arg  MODE=':uat'  --no-cache $SELF_PROJECT && docker-compose up -d $SELF_PROJECT --force-recreate  "
+    - ssh -oStrictHostKeyChecking=no cicd@23.99.103.136 "cd $SELF_PROJECT && git pull && docker-compose build --build-arg  MODE=':uat'  --no-cache $SELF_PROJECT && docker-compose up -d --force-recreate $SELF_PROJECT "
 
