@@ -1,4 +1,5 @@
 module.exports = {
+  env: process.env.CURR_ENV,
   title: 'Good Buy Summer 全館85折最後倒數！台灣設計師原創服飾平台-Halfme',
   description:
     '結合設計、原創、共享的服飾平台，為台灣在地新銳設計師提供盡情揮灑的創作舞台，將時尚伸展台延伸到每個人的衣櫃裡，在日常生活中實踐繽紛多元的穿搭美學。',
@@ -51,7 +52,7 @@ module.exports = {
           'Q91020724605S',
           'Q91020574627S',
           'Q91020002014S',
-          'Q91020002012S',
+          'Q91020912012S',
           'Q91020102005S',
           'Q91020804607S'
         ],
@@ -106,7 +107,3 @@ module.exports = {
     }
   ]
 };
-
-function stringToArray(string){
-  
-}
