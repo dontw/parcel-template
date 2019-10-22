@@ -1,21 +1,26 @@
-import { h } from 'preact';
+import { h } from 'preact'
+import LazyImage from '../LazyImage'
 
-function numberFormatter(num) {
-  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
-}
+import numberFormatter from '~/utils/numberFormatter'
 
 export default function Card({ data }) {
   return (
-    <div class="rounded-sm bg-white m-3">
-      <img class="object-cover" src={data.image} alt="Sunset in the mountains"/>
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{data.designer}</div>
-        <div class="mb-1 truncate" style="color:#999999;">{data.product_name}</div>
-        <div class="mb-3">$ {numberFormatter(data.price)}</div>
-        <div class="text-center md:text-right">
-          <a class="w-full md:w-auto inline-block bg-gray-700 rounded-sm text-white py-2 px-6 text-sm" href={data.url} target="_blank">前往購買</a>
+    <div class='rounded-sm bg-white m-1 md:m-3 hover:shadow-lg' style="transition:.3s;">
+      <a class='block' href={data.url} target='_blank'>
+        <LazyImage src={data.image} alt='image' width='500' height='600' />
+        <div class='px-3 md:px-6 py-2 md:py-4'>
+          <div class='font-bold md:text-xl mb-2'>{data.designer}</div>
+          <div class='mb-1 text-sm md:text-base truncate' style='color:#999999;'>
+            {data.product_name}
+          </div>
+          <div class='mb-3'>$ {numberFormatter(data.price)}</div>
+          <div class='text-center md:text-right'>
+            <div class='w-full md:w-auto inline-block bg-gray-700 rounded-sm text-white py-2 px-6 text-sm'>
+              前往購買
+            </div>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
-  );
+  )
 }

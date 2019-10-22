@@ -1,6 +1,6 @@
-# parcel-template
+# alpha-event
 
-輕量化的前端開發工具組，主要使用 tailwindcss + preact
+第一個活動頁，基於 [parcel-template](https://gitlab.halfme.com/frontend-boilerplates/parcel-template)
 
 # Requirement
 
@@ -10,16 +10,25 @@ node.js v.10.16.3 以上 (LTS 版本)
 
 ```bash
 # clone the project
-git clone git@gitlab.halfme.com:frontend-boilerplates/parcel-tamplate.git
+git clone git@gitlab.halfme.com:halfme-events/alpha-event.git
 
 # enter the project directory
-cd event-site
+cd alpha-event
 
 # install dependency
 yarn
 
 # develop
 yarn dev
+
+# Compress png image
+# 使用第三方 api https://tinypng.com 壓縮圖檔，每月限額 500 次
+# api key 為 Zh5R5cXFqZVl7qFkJZSFMLsYXVs9mYHT
+yarn tinypng
+
+# Minify svg image
+# 使用 svgo 壓縮圖檔
+yarn svgo
 ```
 
 This will automatically open http://localhost
@@ -27,18 +36,42 @@ This will automatically open http://localhost
 ## Build
 
 ```bash
+# build for uat enviroment
+# 結果會產出於 /dist 資料夾中
+yarn build:uat
 
 # build for production environment
 # 結果會產出於 /dist 資料夾中
 yarn build
 ```
 
+## Project Structure
+
+```shell
+├─src
+│  ├─/assets     # icon 與 圖片
+│  ├─/components # 組件
+│  ├─/style      # 樣式：純粹用來引入 tailwind.css 沒必要不要擴充
+│  ├─/view       # 頁面容器組件
+│  ├─index.html  # html 主檔：使用 posthtml expression 模板，於此引入 main.js
+│  └─main.js     # js 主檔：在此引入 樣式 及 js 功能套件
+├─.env               # 環境變數
+├─content.config.js  # 活動頁內容設定檔
+├─postcss.config.js  # postcss設定: tailwind, autoprefixer, purgecss
+├─posthtml.config.js # posthtml設定: html 變數模板 posthtml-expressions
+└─tailwind.config.js # tailwind css 自訂主題設定： container 寬度
+
+```
+
 ## Environment Variables
+
 環境變數被設定於 `.env` 中
 
-| 變數名稱 | 說明         |
-| -------- | ------------ |
-| APP_URL  | Api base url |
+| 變數名稱 | 說明                                  |
+| -------- | ------------------------------------- |
+| CURR_ENV | 專案辨識目前環境用                    |
+| URL      | 本專案要部署的 url ， 給 meta tags 用 |
+| APP_URL  | Api base url                          |
 
 ## Contact
 
