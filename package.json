@@ -9,7 +9,7 @@
     "prebuild:uat": "rm -rf dist && rm -rf .cache",
     "build:uat": "NODE_ENV=development parcel build src/index.html src/404.html --no-source-maps --public-url '.'",
     "prebuild": "rm -rf dist && rm -rf .cache",
-    "build": "parcel build src/index.html src/404.html --no-source-maps --public-url '.'",
+    "build": "parcel build src/index.html --no-source-maps --public-url '.'",
     "tinypng": "tinypng src/public -k Zh5R5cXFqZVl7qFkJZSFMLsYXVs9mYHT",
     "svgo": "svgo src/assets/*svg"
   },

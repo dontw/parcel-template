@@ -23,6 +23,7 @@ export default function App() {
 
   return (
   <Router>
+    <SummerSale2019  path="/" />
     <SummerSale2019  path="/goodbuy2019ss" />
     <DoubleEleven path="/double-eleven" />
     <Error default />
