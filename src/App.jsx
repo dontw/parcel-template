@@ -6,6 +6,7 @@ import smoothscroll from 'smoothscroll-polyfill'
 import pkg from '../package.json'
 
 import Error from './view/Error'
+import Home from './view/Home'
 import SummerSale2019 from './view/SummerSale2019.jsx'
 import DoubleEleven from './view/DoubleEleven'
 
@@ -23,7 +24,7 @@ export default function App() {
 
   return (
   <Router>
-    <SummerSale2019  path="/" />
+    <Home  path="/" />
     <SummerSale2019  path="/goodbuy2019ss" />
     <DoubleEleven path="/double-eleven" />
     <Error default />

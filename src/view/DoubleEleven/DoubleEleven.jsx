@@ -60,22 +60,21 @@ export default function DoubleEleven() {
   }
 
   useEffect(() => {
-    // if (CurrentEnv !== 'production') {
-    //   const Spell = prompt('請輸入咒語');
-    //   switch (Spell) {
-    //     case 'shibe':
-    //       alert('wow! you are so awesome!');
-    //       setContent();
-    //       break;
-    //     default:
-    //       alert('ooops! something wrong, maybe you should google it..');
-    //       location.href = 'https://www.google.com';
-    //       break;
-    //   }
-    // } else {
-    //   setContent();
-    // }
-    setContent();
+    if (CurrentEnv !== 'production') {
+      const Spell = prompt('請輸入咒語');
+      switch (Spell) {
+        case 'shibe':
+          alert('wow! you are so awesome!');
+          setContent();
+          break;
+        default:
+          alert('ooops! something wrong, maybe you should google it..');
+          location.href = 'https://www.google.com';
+          break;
+      }
+    } else {
+      setContent();
+    }
   }, []);
 
   return (
