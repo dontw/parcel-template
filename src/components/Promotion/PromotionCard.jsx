@@ -1,24 +1,9 @@
 import { h } from 'preact';
 import LazyImage from '../LazyImage';
+import DiscountTag from './components/DiscountTag';
 
 import numberFormatter from '~/utils/numberFormatter';
 
-const DiscountTag = ({ discountRate }) => {
-  const formatDicsountRate = 100 - discountRate * 100;
-  if (discountRate) {
-    return (
-      <div
-        class="absolute pt-1 bg-red-500 text-white text-center"
-        style="height:50px; width:50px; top:12px; right:12px; border-radius:1px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);"
-      >
-        <h3 class="mb-0">{formatDicsountRate} %</h3>
-        <p class="text-white font-bold" style="font-size:12px;">
-          OFF
-        </p>
-      </div>
-    );
-  }
-};
 
 export default function Card({ data }) {
   return (
