@@ -79,7 +79,8 @@ export default function DoubleEleven() {
 
   return (
     <div>
-      <Helmet
+      {/*! dynamic header tags */}
+      {/* <Helmet
         title="ELEVEN EVENT"
         meta={[
           { name: 'title', content: 'Helmet application' },
@@ -100,7 +101,7 @@ export default function DoubleEleven() {
           { property: 'twitter:url', content: 'url'},
           { property: 'twitter:image', content:'imageurl'}
         ]}
-      />
+      /> */}
       {components.map((item) => (
         <MyComponent tagName={item.tagName} data={item.data}></MyComponent>
       ))}
