@@ -9,7 +9,7 @@
     "prebuild:uat": "rm -rf dist && rm -rf .cache",
     "build:uat": "NODE_ENV=development parcel build src/index.html src/404.html --no-source-maps --public-url '.'",
     "prebuild": "rm -rf dist && rm -rf .cache",
-    "build": "parcel build src/index.html src/404.html --no-source-maps --public-url '.'",
+    "build": "parcel build src/index.html --no-source-maps --public-url '.'",
     "tinypng": "tinypng src/public -k Zh5R5cXFqZVl7qFkJZSFMLsYXVs9mYHT",
     "svgo": "svgo src/assets/*svg"
   },
@@ -30,6 +30,8 @@
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "preact": "^10.0.0",
+    "preact-helmet": "^4.0.0-alpha-3",
+    "preact-router": "^3.1.0",
     "smoothscroll-polyfill": "^0.4.4",
     "vanilla-lazyload": "^12.1.0",
     "whatwg-fetch": "^3.0.0"
