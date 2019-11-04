@@ -3943,6 +3943,11 @@ picomatch@^2.0.4:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.0.7.tgz#514169d8c7cd0bdbeecc8a2609e34a7163de69f6"
   integrity sha512-oLHIdio3tZ0qH76NybpeneBhYVj0QFTfXEFTc/B3zKQspYfYYkWYgFsmzo+4kvId/bQRcNkVeguI3y+CD22BtA==
 
+picostyle@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/picostyle/-/picostyle-2.2.0.tgz#c013aff511d0658867b9a445e88baf56b035a8ae"
+  integrity sha512-hkP+80H9dRxXjG3a6/tz3xa7q9imnZM7TAXE+nlbmHo0MbALGOdwwUW1KrSEIN9Dk4nUyxT+vDk/fqBCQh2BCQ==
+
 pn@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"

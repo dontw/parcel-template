@@ -8,6 +8,7 @@ import pkg from '../package.json'
 import Error from './view/Error'
 import Home from './view/Home'
 import SummerSale2019 from './view/SummerSale2019.jsx'
+import PanEvent from './view/PanEvent'
 import DoubleEleven from './view/DoubleEleven'
 
 export default function App() {
@@ -24,9 +25,11 @@ export default function App() {
 
   return (
   <Router>
-    <DoubleEleven  path="/" />
+    <Home  path="/" />
     <SummerSale2019  path="/goodbuy2019ss" />
-    <DoubleEleven path="/double-eleven" />
+    <PanEvent path="/panevent" />
+    {/* TODO: change to real url and remeber to change nginx config file! */}
+    {/* <DoubleEleven path="/double-eleven" /> */}
     <Error default />
   </Router>
   )

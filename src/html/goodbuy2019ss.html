@@ -3,9 +3,9 @@
   <head>
     <!-- general -->
     <meta charset="UTF-8" />
-    <title>Double ELEVEN</title>
+    <title>{{ title }}</title>
     <link rel="icon" href="{{ faviconUrl }}" />
-    <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <link rel="stylesheet" type="text/css" href="../style/main.css">
 
     <!-- web crawler -->
     <meta name="robots" content="all,follow" />
@@ -27,9 +27,9 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="{{ url }}" />
     <meta property="twitter:title" content="{{ title }}" />
     <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:url" content="{{ url }}" />
     <meta property="twitter:image" content="{{ imageUrl }}" />
 
     <if condition="env === 'production'">
@@ -98,6 +98,6 @@
       ></noscript>
     </if>
     <div id="app"></div>
-    <script src="./main.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>
