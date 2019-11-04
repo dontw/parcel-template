@@ -24,8 +24,9 @@ export default function App() {
 
   return (
   <Router>
-    <DoubleEleven  path="/" />
+    <Home  path="/" />
     <SummerSale2019  path="/goodbuy2019ss" />
+    {/* TODO: change to real url and remeber to change nginx config file! */}
     <DoubleEleven path="/double-eleven" />
     <Error default />
   </Router>
