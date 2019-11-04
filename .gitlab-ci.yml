@@ -1,0 +1,24 @@
+image: docker:stable
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay2
+  CONTAINER_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME$CI_PIPELINE_ID
+  APP_NAME: $CI_PROJECT_NAME-$CI_COMMIT_REF_NAME
+
+stages:
+  - deploy
+
+include:
+  - project: 'deploying/halfme/template'
+    file: 'nodejs-docker-deploy.yml'
+
+prodDeploy:
+  extends: .nodejs-docker-deploy
+  only:
+    - master
+    - uat
+  variables:
+    SELF_PROJECT: "alpha-event"
