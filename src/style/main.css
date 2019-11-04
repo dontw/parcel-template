@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* glide's style */
 @import url(../../node_modules/@glidejs/glide/dist/css/glide.core.min.css);
+@import url(../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css);
 
 html {
 	scroll-behavior: smooth;

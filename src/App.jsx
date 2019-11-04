@@ -25,11 +25,11 @@ export default function App() {
 
   return (
   <Router>
-    <PanEvent  path="/" />
+    <Home  path="/" />
     <SummerSale2019  path="/goodbuy2019ss" />
     <PanEvent path="/panevent" />
     {/* TODO: change to real url and remeber to change nginx config file! */}
-    <DoubleEleven path="/double-eleven" />
+    {/* <DoubleEleven path="/double-eleven" /> */}
     <Error default />
   </Router>
   )
