@@ -2,7 +2,7 @@ import { h } from 'preact';
 import LazyImage from '../LazyImage';
 import DiscountTag from './components/DiscountTag';
 
-import numberFormatter from '~/utils/numberFormatter';
+import numberFormatter from '../../utils/numberFormatter';
 
 export default function Card({ data }) {
   return (

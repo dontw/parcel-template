@@ -5,12 +5,12 @@
   "license": "MIT",
   "scripts": {
     "predev": "rm -rf dist .cache",
-    "dev": "parcel serve src/index.html --port 80",
+    "dev": "parcel serve src/html/index.html --port 80",
     "prebuild:uat": "rm -rf dist && rm -rf .cache",
-    "build:uat": "NODE_ENV=development parcel build src/index.html src/double-eleven.html src/404.html --no-source-maps --public-url '.'",
+    "build:uat": "NODE_ENV=development parcel build src/html/*.html --no-source-maps --public-url '.'",
     "prebuild": "rm -rf dist && rm -rf .cache",
-    "build": "parcel build src/index.html src/double-eleven.html src/404.html --no-source-maps --public-url '.'",
-    "tinypng": "tinypng src/public -k Zh5R5cXFqZVl7qFkJZSFMLsYXVs9mYHT",
+    "build": "parcel build src/html/*.html --no-source-maps",
+    "tinypng": "tinypng src/public/panevent -k Zh5R5cXFqZVl7qFkJZSFMLsYXVs9mYHT",
     "svgo": "svgo src/assets/*svg"
   },
   "devDependencies": {

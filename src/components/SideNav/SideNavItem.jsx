@@ -3,19 +3,19 @@ import { h } from 'preact'
 // icons
 
 // 飾品
-import AccIcon from '~/assets/icon_accessories.svg'
+import AccIcon from '../../assets/icon_accessories.svg'
 // 連身裝
-import DressIcon from '~/assets/icon_dress.svg'
+import DressIcon from '../../assets/icon_dress.svg'
 // 外套
-import CoatIcon from '~/assets/icon_coat.svg'
+import CoatIcon from '../../assets/icon_coat.svg'
 // 下著
-import PantsIcon from '~/assets/icon_pants.svg'
+import PantsIcon from '../../assets/icon_pants.svg'
 // 上身
-import ShirtIcon from '~/assets/icon_shirt.svg'
+import ShirtIcon from '../../assets/icon_shirt.svg'
 // 眼鏡
-import GlassesIcon from '~/assets/icon_glasses.svg'
+import GlassesIcon from '../../assets/icon_glasses.svg'
 // 襪子
-import SocksIcon from '~/assets/icon_socks.svg'
+import SocksIcon from '../../assets/icon_socks.svg'
 
 const Icon = {
   accessories: AccIcon,

@@ -1,10 +1,10 @@
 import { h } from 'preact'
 
-import getColorContrast from '~/utils/getColorContrast'
+import getColorContrast from '../../utils/getColorContrast'
 
 import PromotionCard from './PromotionCard.jsx'
 
-import CommingSoonImage from '~/assets/comingsoon.svg'
+import CommingSoonImage from '../../assets/comingsoon.svg'
 
 const blackCommingSoonImage = (
   <img
