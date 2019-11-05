@@ -1,4 +1,4 @@
-const Content = require('./html-prerender.config')
+const Content = require('./html-prerender-content.config')
 const { env, title, description, keywords, url, faviconUrl, imageUrl } = Content
 module.exports = {
   plugins: [
