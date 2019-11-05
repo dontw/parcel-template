@@ -1,4 +1,5 @@
-module.exports = {
+export default module.exports = {
+  eventId: 'goodbuy2019ss',
   components: [
     //導航列
     {
