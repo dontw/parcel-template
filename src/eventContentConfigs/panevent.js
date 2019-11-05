@@ -1,4 +1,5 @@
-module.exports = {
+export default {
+  eventId: 'panevent',
   components: [
     //導航列
     {
