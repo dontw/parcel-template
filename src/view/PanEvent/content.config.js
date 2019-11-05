@@ -39,43 +39,6 @@ module.exports = {
     },
 
     {
-      tagName: 'SquareImage',
-      data: {
-        imageUrl: 'panevent-images/BN-2.jpg',
-        mobileImageUrl: 'panevent-images/BN-2.jpg',
-        bgColor: '#000000'
-      }
-    },
-
-    {
-      tagName: 'SquareImage',
-      data: {
-        imageUrl: 'panevent-images/BN-3.jpg',
-        mobileImageUrl: 'panevent-images/BN-3.jpg',
-        bgColor: '#000000'
-      }
-    },
-
-    {
-      tagName: 'SquareImage',
-      data: {
-        imageUrl: 'panevent-images/BN-4.jpg',
-        mobileImageUrl: 'panevent-images/BN-4.jpg',
-        bgColor: '#000000'
-      }
-    },
-
-    {
-      tagName: 'SquareImage',
-      data: {
-        imageUrl: 'panevent-images/BN-5.jpg',
-        mobileImageUrl: 'panevent-images/BN-5.jpg',
-        bgColor: '#000000'
-      }
-    },
-
-    // 促銷卡牌
-    {
       tagName: 'Promotion',
       data: {
         promotionId: 'promo1',
@@ -92,6 +55,15 @@ module.exports = {
         ],
         headerBgColor: '#9A999A',
         contentBgColor: '#000000'
+      }
+    },
+
+    {
+      tagName: 'SquareImage',
+      data: {
+        imageUrl: 'panevent-images/BN-2.jpg',
+        mobileImageUrl: 'panevent-images/BN-2.jpg',
+        bgColor: '#000000'
       }
     },
 
@@ -116,6 +88,15 @@ module.exports = {
     },
 
     {
+      tagName: 'SquareImage',
+      data: {
+        imageUrl: 'panevent-images/BN-3.jpg',
+        mobileImageUrl: 'panevent-images/BN-3.jpg',
+        bgColor: '#000000'
+      }
+    },
+
+    {
       tagName: 'Promotion',
       data: {
         promotionId: 'promo3',
@@ -128,6 +109,16 @@ module.exports = {
         ],
         headerBgColor: '#9A999A',
         contentBgColor: '#000000'
+      }
+    },
+
+
+    {
+      tagName: 'SquareImage',
+      data: {
+        imageUrl: 'panevent-images/BN-4.jpg',
+        mobileImageUrl: 'panevent-images/BN-4.jpg',
+        bgColor: '#000000'
       }
     },
 
@@ -148,6 +139,15 @@ module.exports = {
         ],
         headerBgColor: '#9A999A',
         contentBgColor: '#000000'
+      }
+    },
+
+    {
+      tagName: 'SquareImage',
+      data: {
+        imageUrl: 'panevent-images/BN-5.jpg',
+        mobileImageUrl: 'panevent-images/BN-5.jpg',
+        bgColor: '#000000'
       }
     },
 
