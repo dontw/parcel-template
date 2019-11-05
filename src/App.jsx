@@ -7,7 +7,7 @@ import pkg from '../package.json'
 
 import Error from './view/Error'
 import Home from './view/Home'
-import SummerSale2019 from './view/SummerSale2019.jsx'
+import SummerSale2019 from './view/SummerSale2019'
 import PanEvent from './view/PanEvent'
 import DoubleEleven from './view/DoubleEleven'
 
