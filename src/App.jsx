@@ -30,7 +30,7 @@ export default function App() {
     <Router>
       <Home path="/" />
       <EventPageContainer content={summerContent} path="/goodbuy2019ss" />
-      <EventPageContainer content={paneventContent} path="/panevent" />
+      {/* <EventPageContainer content={paneventContent} path="/panevent" /> */}
       {/* TODO: change to real url and remeber to change nginx config file! */}
       <Error default />
     </Router>
