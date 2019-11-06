@@ -13,8 +13,8 @@ export default module.exports = {
         images: [
           {
             name: 'image1',
-            url: 'header_web_banner.png',
-            mobileUrl: 'header_app_banner.png'
+            url: 'goodbuy2019ss/header_web_banner.png',
+            mobileUrl: 'goodbuy2019ss/header_app_banner.png'
           }
         ]
       }
