@@ -48,18 +48,24 @@ yarn build
 ## Project Structure
 
 ```shell
+├─/docker         # nginx 路徑設定在這裡面！
 ├─src
-│  ├─/assets     # icon 與 圖片
-│  ├─/components # 組件
-│  ├─/style      # 樣式：純粹用來引入 tailwind.css 沒必要不要擴充
-│  ├─/view       # 頁面容器組件
-│  ├─index.html  # html 主檔：使用 posthtml expression 模板，於此引入 main.js
-│  └─main.js     # js 主檔：在此引入 樣式 及 js 功能套件
-├─.env               # 環境變數
-├─content.config.js  # 活動頁內容設定檔
-├─postcss.config.js  # postcss設定: tailwind, autoprefixer, purgecss
-├─posthtml.config.js # posthtml設定: html 變數模板 posthtml-expressions
-└─tailwind.config.js # tailwind css 自訂主題設定： container 寬度
+│  ├─/assets              # icon 與 圖片
+│  ├─/components          # 組件
+│  ├─/eventContentConfigs # 各活動頁內容組成
+│  ├─/html                # 各活動頁html組成(人肉 prerender)
+│  ├─/public              # 各活動頁靜態檔
+│  ├─/style               # 樣式：純粹用來引入 tailwind.css 沒必要不要擴充，組件自訂樣式可用 picostyle
+│  ├─/utils               # 共用 functions
+│  ├─/view                # 頁面容器組件
+│  ├─index.html           # html 主檔：使用 posthtml expression 模板，於此引入 main.js
+│  └─main.js              # js 主檔：在此引入 樣式 及 js 功能套件
+├─.env                            # 環境變數
+├─.env.development                # 環境變數(開發 & uat)
+├─html-prender-content.config.js  # 所有活動頁 html 組成 (自動 prerender)
+├─postcss.config.js               # postcss設定: tailwind, autoprefixer, purgecss
+├─posthtml.config.js              # posthtml設定: html 變數模板 posthtml-expressions
+└─tailwind.config.js              # tailwind css 自訂主題設定： container 寬度
 
 ```
 
