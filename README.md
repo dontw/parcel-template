@@ -1,6 +1,6 @@
 # alpha-event
 
-第一個活動頁，基於 [parcel-template](https://gitlab.halfme.com/frontend-boilerplates/parcel-template)
+活動頁們，基於 [parcel-template](https://gitlab.halfme.com/frontend-boilerplates/parcel-template)
 
 # Requirement
 
